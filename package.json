@@ -1,0 +1,16 @@
+{
+  "name": "wolf",
+  "version": "1.0.0",
+  "description": "No javascript. Pure (s)css",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass scss/* -- output css",
+    "watch-sass": "npm run sass -- --watch"
+  },
+  "author": "niC00L",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.6.1"
+  }
+}
