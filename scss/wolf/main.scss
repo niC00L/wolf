@@ -1,0 +1,11 @@
+.wolf-wrapper {
+  position: absolute;
+  top: 268px;
+  left: 507px;
+
+  @import 'head.scss';
+  @import "body.scss";
+  @import "front-leg.scss";
+  @import "back-leg.scss";
+}
+

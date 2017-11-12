@@ -1,0 +1,35 @@
+.back-leg-wrapper {
+  position: absolute;
+  top: 9px;
+  left: -23px;
+
+  .top {
+    width: 248px;
+    height: 398px;
+    background-image: url("../assets/back_top.png");
+  }
+  .middle {
+    position: absolute;
+    top: 303px;
+    left: -42px;
+    width: 161px;
+    height: 201px;
+    background-image: url("../assets/back_middle.png");
+  }
+  .bottom {
+    position: absolute;
+    top: 138px;
+    left: 0px;
+    width: 59px;
+    height: 192px;
+    background-image: url("../assets/back_bottom.png");
+  }
+  .paw {
+    position: absolute;
+    top: 142px;
+    left: 10px;
+    width: 112px;
+    height: 54px;
+    background-image: url("../assets/paw.png");
+  }
+}

@@ -1,0 +1,16 @@
+@import 'wolf/main.scss';
+
+body {
+  height: 1000px;
+  background-color: hsl(195, 100%, 40%);
+  //background-image: url("../assets/default.png");
+  //background-position: center center;
+  //background-repeat: no-repeat;
+}
+
+.ground {
+  height: 50px;
+  background-color: hsl(17, 16%, 24%);
+}
+
+

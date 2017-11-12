@@ -1,0 +1,29 @@
+.head-wrapper {
+  position: absolute;
+  left: 495px;
+  top: -20px;
+
+  .head {
+    position: absolute;
+    top: 5px;
+    left: 272px;
+    width: 295px;
+    height: 214px;
+    background-image: url("../assets/head.png");
+
+    .ear {
+      position: absolute;
+      top: -37px;
+      left: 73px;
+      width: 94px;
+      height: 84px;
+      background-image: url("../assets/ear.png");
+    }
+  }
+
+  .neck {
+    width: 407px;
+    height: 302px;
+    background-image: url("../assets/neck.png");
+  }
+}

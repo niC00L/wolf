@@ -1,0 +1,106 @@
+.wolf-wrapper {
+  position: absolute;
+  top: 268px;
+  left: 507px; }
+  .wolf-wrapper .head-wrapper {
+    position: absolute;
+    left: 495px;
+    top: -20px; }
+    .wolf-wrapper .head-wrapper .head {
+      position: absolute;
+      top: 5px;
+      left: 272px;
+      width: 295px;
+      height: 214px;
+      background-image: url("../assets/head.png"); }
+      .wolf-wrapper .head-wrapper .head .ear {
+        position: absolute;
+        top: -37px;
+        left: 73px;
+        width: 94px;
+        height: 84px;
+        background-image: url("../assets/ear.png"); }
+    .wolf-wrapper .head-wrapper .neck {
+      width: 407px;
+      height: 302px;
+      background-image: url("../assets/neck.png"); }
+  .wolf-wrapper .body {
+    width: 680px;
+    height: 308px;
+    background-image: url("../assets/torso.png"); }
+  .wolf-wrapper .tail {
+    position: absolute;
+    top: 10px;
+    left: -206px;
+    width: 285px;
+    height: 476px;
+    background-image: url("../assets/tail.png"); }
+  .wolf-wrapper .front-leg-wrapper {
+    position: absolute;
+    top: -19px;
+    left: 488px; }
+    .wolf-wrapper .front-leg-wrapper .top {
+      width: 236px;
+      height: 372px;
+      background-image: url("../assets/front_top.png"); }
+    .wolf-wrapper .front-leg-wrapper .middle {
+      position: absolute;
+      top: 307px;
+      left: 60px;
+      width: 120px;
+      height: 265px;
+      background-image: url("../assets/front_middle.png"); }
+    .wolf-wrapper .front-leg-wrapper .bottom {
+      position: absolute;
+      top: 218px;
+      left: 21px;
+      width: 98px;
+      height: 138px;
+      background-image: url("../assets/front_bottom.png"); }
+    .wolf-wrapper .front-leg-wrapper .paw {
+      position: absolute;
+      top: 87px;
+      left: 42px;
+      width: 112px;
+      height: 54px;
+      background-image: url("../assets/paw.png"); }
+  .wolf-wrapper .back-leg-wrapper {
+    position: absolute;
+    top: 9px;
+    left: -23px; }
+    .wolf-wrapper .back-leg-wrapper .top {
+      width: 248px;
+      height: 398px;
+      background-image: url("../assets/back_top.png"); }
+    .wolf-wrapper .back-leg-wrapper .middle {
+      position: absolute;
+      top: 303px;
+      left: -42px;
+      width: 161px;
+      height: 201px;
+      background-image: url("../assets/back_middle.png"); }
+    .wolf-wrapper .back-leg-wrapper .bottom {
+      position: absolute;
+      top: 138px;
+      left: 0px;
+      width: 59px;
+      height: 192px;
+      background-image: url("../assets/back_bottom.png"); }
+    .wolf-wrapper .back-leg-wrapper .paw {
+      position: absolute;
+      top: 142px;
+      left: 10px;
+      width: 112px;
+      height: 54px;
+      background-image: url("../assets/paw.png"); }
+
+body {
+  height: 1000px;
+  background-color: #0099cc;
+  background-image: url("../assets/default.png");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.ground {
+  height: 50px;
+  background-color: #473933; }
