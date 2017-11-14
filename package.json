@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"test\"",
     "sass" : "node-sass scss/main.scss --output css",
-    "watch-sass": "npm run sass -- --watch"
+    "watch-sass": "npm run sass -- --watch",
+    "build": "cp index.html docs && cp assets/* docs/assets && node-sass scss/main.scss --output docs/css"
   },
   "author": "niC00L",
   "license": "ISC",
