@@ -1,3 +1,63 @@
+@keyframes front-top {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes front-middle {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(-60deg);
+  }
+  40% {
+    transform: rotate(-60deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes front-bottom {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(100deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes front-paw {
+  0% {
+    transform: rotate(-10deg);
+  }
+  10% {
+    transform: rotate(100deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  70% {
+    transform: rotate(20deg);
+  }
+  85% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
 .front-leg-wrapper {
   position: absolute;
   top: -19px;
@@ -7,6 +67,8 @@
     width: 236px;
     height: 372px;
     background-image: url("../assets/front_top.png");
+    transform-origin: 40% 30%;
+    @include animate(front-top);
   }
   .middle {
     position: absolute;
@@ -15,6 +77,8 @@
     width: 120px;
     height: 265px;
     background-image: url("../assets/front_middle.png");
+    transform-origin: 50% 5%;
+    @include animate(front-middle);
   }
   .bottom {
     position: absolute;
@@ -23,6 +87,8 @@
     width: 98px;
     height: 138px;
     background-image: url("../assets/front_bottom.png");
+    transform-origin: 38% 20%;
+    @include animate(front-bottom);
   }
   .paw {
     position: absolute;
@@ -31,5 +97,7 @@
     width: 112px;
     height: 54px;
     background-image: url("../assets/paw.png");
+    transform-origin: 25% 30%;
+    @include animate(front-paw);
   }
 }
