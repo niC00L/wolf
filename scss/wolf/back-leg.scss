@@ -1,3 +1,63 @@
+@keyframes back-top {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes back-middle {
+  0% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(35deg);
+  }
+  60% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes back-bottom {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-75deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes back-paw {
+  0% {
+    transform: rotate(5deg);
+  }
+  10% {
+    transform: rotate(120deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  70% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
 .back-leg-wrapper {
   position: absolute;
   top: 9px;
@@ -7,6 +67,8 @@
     width: 248px;
     height: 398px;
     background-image: url("../assets/back_top.png");
+    transform-origin: 55% 20%;
+    @include animate(back-top);
   }
   .middle {
     position: absolute;
@@ -15,6 +77,8 @@
     width: 161px;
     height: 201px;
     background-image: url("../assets/back_middle.png");
+    transform-origin: 75% 25%;
+    @include animate(back-middle);
   }
   .bottom {
     position: absolute;
@@ -23,6 +87,8 @@
     width: 59px;
     height: 192px;
     background-image: url("../assets/back_bottom.png");
+    transform-origin: 65% 15%;
+    @include animate(back-bottom);
   }
   .paw {
     position: absolute;
@@ -31,5 +97,7 @@
     width: 112px;
     height: 54px;
     background-image: url("../assets/paw.png");
+    transform-origin: 25% 30%;
+    @include animate(back-paw);
   }
 }

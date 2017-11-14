@@ -1,6 +1,6 @@
 @mixin animate($name) {
   animation-name: $name;
-  animation-duration: 4s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -11,9 +11,13 @@
   left: 507px;
   transform: scale(0.5);
 
-  //.front-leg-wrapper.left * {
-  //  animation-delay: -2s;
-  //}
+  .front-leg-wrapper.left * {
+    animation-delay: -0.5s;
+  }
+
+  .back-leg-wrapper.right * {
+    animation-delay: -0.5s;
+  }
 
   @import 'head.scss';
   @import "body.scss";
