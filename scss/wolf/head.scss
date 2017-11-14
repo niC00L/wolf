@@ -1,7 +1,21 @@
+@keyframes head {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
 .head-wrapper {
   position: absolute;
   left: 495px;
   top: -20px;
+  transform-origin: 20% 65%;
+  @include animate-twice(head);
 
   .head {
     position: absolute;
@@ -10,6 +24,9 @@
     width: 295px;
     height: 214px;
     background-image: url("../assets/head.png");
+    transform-origin: 15% 50%;
+    @include animate-twice(head);
+    animation-delay: 0.25s;
 
     .ear {
       position: absolute;

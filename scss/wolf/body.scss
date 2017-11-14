@@ -1,14 +1,42 @@
+@keyframes body {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes tail {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .body {
-    width: 680px;
-    height: 308px;
-    background-image: url("../assets/torso.png");
+  position: relative;
+  width: 680px;
+  height: 308px;
+  background-image: url("../assets/torso.png");
+  @include animate-twice(body);
 }
 
 .tail {
-    position: absolute;
-    top: 10px;
-    left: -206px;
-    width: 285px;
-    height: 476px;
-    background-image: url("../assets/tail.png");
+  position: absolute;
+  top: 10px;
+  left: -206px;
+  width: 285px;
+  height: 476px;
+  background-image: url("../assets/tail.png");
+  transform-origin: 80% 10%;
+  @include animate-twice(tail);
 }
